@@ -1,0 +1,26 @@
+.slick-slider .slick-track {
+    display: flex !important;
+    gap: 30px !important;
+}
+
+.slick-dots li button::before {
+    content: unset !important;
+}
+
+.slick-dots li {
+    background-color:white;
+    width: 29px !important;
+    height: 12px !important;
+    border-radius: 21px;
+}
+
+.slick-dots li.slick-active {
+    background-color:blue;
+    width: 59px !important;
+    height: 12px !important;
+    border-radius: 21px;
+}
+
+.slick-slide.slick-current.slick-active {
+    border: 2px solid #1219D2 !important;
+}

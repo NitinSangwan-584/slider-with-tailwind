@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>slider</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/root.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <section class="min-h-[100vh] justify-center bg-[#140D1B] relative  justify-items-center items-center content-center">
+    <img class="absolute bottom-[8%] left-[-30px] spin-slow " src="./assets/img/star.svg" alt="star">
+    <img class="absolute bottom-0 left-0" src="./assets/img/circle-bottom.svg" alt="shadow">
+    <img class="absolute top-0 right-0" src="./assets/img/circle-top.svg" alt="shadow">
+    <div class="max-w-[1140px] ml-auto mr-auto pl-3 pr-3">
+      <h1 class="text-center text-white text-5xl font-normal leading-[56.4px] mb-12">Meet Our Team</h1>
+      <div class="autoplay gap-5 ">
+        <div class="bg-[#141044] gap-5 rounded-[13px] max-w-[367px] card"><img class="rounded-t-[13px]"
+            src="./assets/img/women.png" alt="women">
+          <h2 class="text-2xl text-[#FCFFFE] font-normal my-2 ml-6">Darlene Robertson</h2>
+          <h3 class="text-base text-[#FCFFFE] font-normal ml-6 mb-5">CEO & Founder</h3>
+        </div>
+        <div class="bg-[#141044] gap-5 rounded-[13px] max-w-[367px]"><img class="rounded-t-[13px]"
+            src="./assets/img/men.png" alt="men">
+          <h2 class="text-2xl text-[#FCFFFE] font-normal my-2 ml-6">Cameron Williamson</h2>
+          <h3 class="text-base text-[#FCFFFE] font-normal ml-6 mb-5">CEO & Founder</h3>
+        </div>
+        <div class="bg-[#141044] gap-5 rounded-[13px] max-w-[367px]"><img class="rounded-t-[13px]"
+            src="./assets/img/young men.png" alt="young-men">
+          <h2 class="text-2xl text-[#FCFFFE] font-normal my-2 ml-6">Brooklyn Simmons</h2>
+          <h3 class="text-base text-[#FCFFFE] font-normal ml-6 mb-5">CEO & Founder</h3>
+        </div>
+        <div class="bg-[#141044] gap-5 rounded-[13px] max-w-[367px]"><img class="rounded-t-[13px]"
+            src="./assets/img/men.png" alt="men">
+          <h2 class="text-2xl text-[#FCFFFE] font-normal my-2 ml-6">Cameron Williamson</h2>
+          <h3 class="text-base text-[#FCFFFE] font-normal ml-6 mb-5">CEO & Founder</h3>
+        </div>
+        <div class="bg-[#141044] gap-5 rounded-[13px] max-w-[367px]"><img class="rounded-t-[13px]"
+            src="./assets/img/young men.png" alt="young-men">
+          <h2 class="text-2xl text-[#FCFFFE] font-normal my-2 ml-6">Brooklyn Simmons</h2>
+          <h3 class="text-base text-[#FCFFFE] font-normal ml-6 mb-5">CEO & Founder</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script>
+    $('.autoplay').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false,
+      responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrow: false,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }]
+    });
+  </script>
+</body>
+
+</html>
