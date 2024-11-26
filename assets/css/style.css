@@ -13,7 +13,7 @@
 
 .section-1 .slick-dots li {
     background-color: var(--bg-white);
-    width: 29px !important;
+    width: 28px !important;
     height: 12px !important;
     border-radius: 21px;
     margin-top: 10px !important;
@@ -41,21 +41,21 @@
 
 .section-2 .slick-dots li {
     background-color: var(--bg-white);
-    width: 29px !important;
-    height: 12px !important;
-    border-radius: 21px;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 28px;
     margin-top: 10px !important;
 }
 
 .section-2 .slick-dots li.slick-active {
-    background-color: var(--bg-blue);
-    width: 59px !important;
-    height: 12px !important;
-    border-radius: 21px;
+    background-color: var(--light-blue);
+    width: 53px !important;
+    height: 10px !important;
+    border-radius: 28px;
 }
 
 .section-2 .slick-slide.slick-current.slick-active {
-    border: 1px solid var(--bg-blue) !important;
+   background-color: #02274F !important;
 }
 /* section-3 */
 .section-3 .slick-track {
@@ -63,6 +63,13 @@
     gap: 40px !important;
 }
 
+ .section-3 .slick-slide {
+    height: inherit !important;
+    /* display: flex !important; */
+  }
+  .section-3 .slick-slide>div {
+    display: flex;
+  }
 .section-3 .slick-dots li {
     background-color: var(--bg-grey) !important;
     width: 15px !important;
@@ -89,35 +96,10 @@
     bottom: -30%;
 }
 
-.prev {
-    width: 60px;
-    height: 60px;
-    border: 2px solid var(--bg-red);
-    border-radius: 100px;
-    cursor: pointer;
-}
-
-.prev:hover {
-    background-color: var(--bg-red);
-}
-
-.prev:hover path {
+.next:hover path {
     fill: white;
 }
-
-.next {
-    width: 60px;
-    height: 60px;
-    border: 2px solid var(--bg-red);
-    border-radius: 100px;
-    cursor: pointer;
-}
-
-.next:hover {
-    background-color:var(--bg-red);
-}
-
-.next:hover path {
+.prev:hover path {
     fill: white;
 }
 
