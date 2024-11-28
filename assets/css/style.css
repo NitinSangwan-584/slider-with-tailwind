@@ -26,7 +26,7 @@
     border-radius: 21px;
 }
 
-.section-1 .slick-slide.slick-current.slick-active {
+.section-1 .slick-slide.slick-current.slick-active +* {
     border: 1px solid var(--bg-blue) !important;
 }
 /* section-2 */
@@ -55,7 +55,7 @@
 }
 
 .section-2 .slick-slide.slick-current.slick-active {
-   background-color: #02274F !important;
+background-image: linear-gradient(to right, #021b32, #02203e, #02274f, #02274e, #021c32, #021c31);
 }
 /* section-3 */
 .section-3 .slick-track {
@@ -96,10 +96,5 @@
     bottom: -30%;
 }
 
-.next:hover path {
-    fill: white;
-}
-.prev:hover path {
-    fill: white;
-}
+
 
